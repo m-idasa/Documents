@@ -2,6 +2,10 @@
 title: مستندات API
 layout: default
 ---
+
+<link href="/assets/css/custom.css">
+
+
 # مستندات API
 
 ## GET /api/admin (Admin)
