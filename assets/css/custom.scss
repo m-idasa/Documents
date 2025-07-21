@@ -12,22 +12,12 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 p, li, td, th {
-<<<<<<< HEAD
   direction: rtl;
   text-align: right;
-=======
-  direction: rtl !important;
-  text-align: right !important;
->>>>>>> f74d157e44ee5dbcbb07f3d8f450090dafe9204b
   unicode-bidi: plaintext;
 }
 
 .main-content {
-<<<<<<< HEAD
   direction: rtl;
   text-align: right;
-=======
-  direction: rtl !important;
-  text-align: right !important;
->>>>>>> f74d157e44ee5dbcbb07f3d8f450090dafe9204b
 }
