@@ -1,9 +1,13 @@
-theme: minima
+remote_theme: just-the-docs/just-the-docs
+
 title: مستندات API
-description: نمایش مستندات پروژه با پشتیبانی از زبان فارسی
-
-
+description: نسخه‌ی راست‌چین شده برای زبان فارسی
+lang: fa
 markdown: kramdown
 
-sass:
-  style: compressed
+plugins:
+  - jekyll-remote-theme
+
+just_the_docs:
+  css:
+    - /assets/css/custom.css
