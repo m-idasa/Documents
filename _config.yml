@@ -1,7 +1,7 @@
 remote_theme: just-the-docs/just-the-docs
 
 title: مستندات API
-description: نسخه‌ی راست‌چین شده برای زبان فارسی
+description: مستندات فارسی
 lang: fa
 markdown: kramdown
 
@@ -11,4 +11,5 @@ plugins:
 just_the_docs:
   css:
     - /assets/css/custom.css
+
 color_scheme: dark
