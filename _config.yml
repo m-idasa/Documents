@@ -1,13 +1,8 @@
 title: مستندات API
 description: نمایش مستندات پروژه با پشتیبانی از زبان فارسی
-markdown: kramdown
 theme: minima
+
+markdown: kramdown
+
 sass:
   style: compressed
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: default
