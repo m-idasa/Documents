@@ -1,9 +1,3 @@
----
-layout: default
-lang: fa
-title: مستندات API
----
-
 <!-- لینک استایل سفارشی -->
 <link rel="stylesheet" href="/assets/css/custom.css">
 
