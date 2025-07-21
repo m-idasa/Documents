@@ -4,7 +4,25 @@ p, li, td, th {
   text-align: right;
   unicode-bidi: plaintext;
 }
+/* برعکس کردن چینش Flex از چپ‌چین به راست‌چین */
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
-div.side-bar{
-  float: right;
+/* سایدبار سمت راست */
+.side-bar {
+  border-left: none;
+  border-right: 1px solid #2a2a2a;
+}
+
+/* محتوا در سمت چپ */
+.main-content-wrap {
+  margin-left: 0;
+  margin-right: var(--sidebar-width);
+}
+
+/* اصلاح موقعیت دکمه موبایل منو */
+.site-nav {
+  direction: ltr;
 }
