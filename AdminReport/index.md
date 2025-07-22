@@ -9,6 +9,7 @@ parent: مستندات سرویس‌ها
     overflow: hidden;
     border: 1px solid #302d36;
     background: #302d36;
+    
   }
   
   /* Style the buttons inside the tab */
@@ -41,6 +42,7 @@ parent: مستندات سرویس‌ها
     border: 1px solid #31343f;
     border-top: none;
     background: #31343f;
+    direction: ltr
   }  
 </style>
 
