@@ -209,12 +209,12 @@ parent: مستندات سرویس‌ها
 ```
 
 <!-- تب‌ها -->
-<div class="tab-container highlight" >
+<div class="tab-container" >
 
-  <button onclick="showTab('json')">JSON</button>
-  <button onclick="showTab('xml')">XML</button>
+  <button class="active" onclick="switchTab(this, 'tab1')">JSON</button>
+  <button onclick="switchTab(this, 'tab2')">XML</button>
 
-  <div id="json" class="tab-content">
+  <div id="json" class="tab-content active">
     <pre><code>{
   "name": "Mahsa",
   "role": "Developer"
@@ -231,9 +231,11 @@ parent: مستندات سرویس‌ها
 </div>
 
 <script>
-  function showTab(id) {
-    document.querySelectorAll('.tab-content').forEach(e => e.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-  }
-</script>
+function switchTab(button, tabId) {
+  document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
 
+  button.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+</script>
