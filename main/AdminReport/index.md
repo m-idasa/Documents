@@ -1,6 +1,7 @@
 ---
 title: گزارش های مدیریتی
 layout: default
+nav_order: 2
 ---
 
 # گزارش های مدیریتی

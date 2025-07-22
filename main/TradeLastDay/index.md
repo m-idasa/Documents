@@ -1,6 +1,7 @@
 ---
 title: اطلاعات معاملات آخرین روز (TradeLastDay)
 layout: default
+nav_order: 2
 ---
 
 # اطلاعات معاملات آخرین روز (TradeLastDay)
