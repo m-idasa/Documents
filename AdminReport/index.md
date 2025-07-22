@@ -165,11 +165,31 @@ parent: مستندات سرویس‌ها
 "OK"
 ```
 
-'''
-```json First
-"First tab"
-```
-```json Second
-"Second tab"
-```
-'''
+<!-- تب‌ها -->
+<div class="tab-container">
+
+  <button onclick="showTab('json')">JSON</button>
+  <button onclick="showTab('xml')">XML</button>
+
+  <div id="json" class="tab-content">
+    <pre><code>{
+  "name": "Mahsa",
+  "role": "Developer"
+}</code></pre>
+  </div>
+
+  <div id="xml" class="tab-content" style="display:none;">
+    <pre><code>&lt;user&gt;
+  &lt;name&gt;Mahsa&lt;/name&gt;
+  &lt;role&gt;Developer&lt;/role&gt;
+&lt;/user&gt;</code></pre>
+  </div>
+
+</div>
+
+<script>
+  function showTab(id) {
+    document.querySelectorAll('.tab-content').forEach(e => e.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
