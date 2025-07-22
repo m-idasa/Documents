@@ -165,10 +165,9 @@ parent: مستندات سرویس‌ها
 "OK"
 ```
 
-
-```javascript I'm A tab
-console.log('Code Tab A');
+```json First
+"First tab"
 ```
-```javascript I'm tab B
-console.log('Code Tab B');
+```json Second
+"Second tab"
 ```
