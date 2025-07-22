@@ -4,6 +4,49 @@ layout: default
 parent: مستندات سرویس‌ها
 ---
 
+<style>
+.tab-container {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d0cce0;
+  font-family: sans-serif;
+}
+
+.tab-buttons {
+  display: flex;
+  background-color: #d6cce9;
+}
+
+.tab-buttons button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.tab-buttons button.active {
+  background: #cbb9e5;
+}
+
+.tab-content {
+  display: none;
+  background-color: #eee6fc;
+  padding: 12px;
+  font-family: monospace;
+}
+
+.tab-content pre {
+  margin: 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+</style>
+
 # گزارش های مدیریتی
 
 ## GET /api/admin (Admin)
@@ -193,3 +236,4 @@ parent: مستندات سرویس‌ها
     document.getElementById(id).style.display = 'block';
   }
 </script>
+
