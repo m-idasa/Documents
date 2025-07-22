@@ -208,34 +208,43 @@ parent: مستندات سرویس‌ها
 "OK"
 ```
 
-<!-- تب‌ها -->
-<div class="tab-container" >
 
-  <button class="active" onclick="switchTab(this, 'json')">JSON</button>
-  <button onclick="switchTab(this, 'xml')">XML</button>
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
 
-  <div id="json" class="tab-content active">
-    <pre><code>{
-  "name": "Mahsa",
-  "role": "Developer"
-}</code></pre>
-  </div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
 
-  <div id="xml" class="tab-content" style="display:none;">
-    <pre><code>&lt;user&gt;
-  &lt;name&gt;Mahsa&lt;/name&gt;
-  &lt;role&gt;Developer&lt;/role&gt;
-&lt;/user&gt;</code></pre>
-  </div>
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
 
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
 </div>
 
 <script>
-function switchTab(button, tabId) {
-  document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-
-  button.classList.add('active');
-  document.getElementById(tabId).classList.add('active');
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 </script>
