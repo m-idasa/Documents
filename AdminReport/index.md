@@ -26,7 +26,7 @@ parent: مستندات سرویس‌ها
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #31343f;
   }
   
   /* Create an active/current tablink class */
