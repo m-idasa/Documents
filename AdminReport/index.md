@@ -166,7 +166,7 @@ parent: مستندات سرویس‌ها
 ```
 
 <!-- تب‌ها -->
-<div class="tab-container">
+<div class="tab-container highlight" >
 
   <button onclick="showTab('json')">JSON</button>
   <button onclick="showTab('xml')">XML</button>
