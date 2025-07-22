@@ -5,6 +5,9 @@ p, li, td, th {
   unicode-bidi: plaintext;
 }
 
+.main {
+  margin-left: 0;
+}
 /* سایدبار سمت راست */
 .side-bar {
   border-left: 1px solid #2a2a2a;
