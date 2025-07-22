@@ -7,8 +7,9 @@ p, li, td, th {
 
 /* سایدبار سمت راست */
 .side-bar {
-  border-left: none;
-  border-right: 1px solid #2a2a2a;
+  border-left: 1px solid #2a2a2a;
+  border-right: none;
+  float: right;
 }
 
 /* محتوا در سمت چپ */
