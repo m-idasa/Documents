@@ -7,7 +7,8 @@ parent: مستندات سرویس‌ها
 <style>
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid #302d36;
+    background: #302d36;
   }
   
   /* Style the buttons inside the tab */
@@ -29,7 +30,7 @@ parent: مستندات سرویس‌ها
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #302d36;
+    background-color: #ddd;
     
   }
   
