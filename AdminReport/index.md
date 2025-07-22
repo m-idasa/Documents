@@ -31,7 +31,7 @@ parent: مستندات سرویس‌ها
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ddd;
+    background-color: #31343f;
     
   }
   
