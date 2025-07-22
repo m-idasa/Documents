@@ -8,6 +8,7 @@ parent: مستندات سرویس‌ها
 .tab {
     overflow: hidden;
     border: 1px solid #302d36;
+    border-bottom: none;
     background: #302d36;
     
   }
