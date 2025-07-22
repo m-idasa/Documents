@@ -4,11 +4,6 @@ p, li, td, th {
   text-align: right;
   unicode-bidi: plaintext;
 }
-/* برعکس کردن چینش Flex از چپ‌چین به راست‌چین */
-.main {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
 /* سایدبار سمت راست */
 .side-bar {
