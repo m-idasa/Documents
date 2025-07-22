@@ -211,8 +211,8 @@ parent: مستندات سرویس‌ها
 <!-- تب‌ها -->
 <div class="tab-container" >
 
-  <button class="active" onclick="switchTab(this, 'tab1')">JSON</button>
-  <button onclick="switchTab(this, 'tab2')">XML</button>
+  <button class="active" onclick="switchTab(this, 'json')">JSON</button>
+  <button onclick="switchTab(this, 'xml')">XML</button>
 
   <div id="json" class="tab-content active">
     <pre><code>{
