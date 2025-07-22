@@ -1,7 +1,7 @@
 ---
 title: گزارش های مدیریتی
 layout: default
-nav_order: 2
+parent: مستندات سرویس‌ها
 ---
 
 # گزارش های مدیریتی
