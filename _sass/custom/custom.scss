@@ -13,6 +13,7 @@ p, li, td, th {
   border-left: 1px solid #2a2a2a;
   border-right: none;
   right: 0;
+  display: block;
 }
 
 /* محتوا در سمت چپ */
@@ -24,4 +25,7 @@ p, li, td, th {
 .site-nav, .site-header, .site-footer {
 width: 22.5rem;
 direction: rtl;
+}
+.site-footer {
+display: none;
 }
