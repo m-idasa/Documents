@@ -6,13 +6,14 @@ p, li, td, th {
 }
 
 .main {
-  margin-left: 0;
+  margin-left: 15.5rem !important;
 }
 /* سایدبار سمت راست */
 .side-bar {
   border-left: 1px solid #2a2a2a;
   border-right: none;
   float: right;
+  position-right: 0;
 }
 
 /* محتوا در سمت چپ */
@@ -20,8 +21,7 @@ p, li, td, th {
   margin-left: 0;
   margin-right: var(--sidebar-width);
 }
-
-/* اصلاح موقعیت دکمه موبایل منو */
-.site-nav {
-  direction: ltr;
+.site-nav, .site-header, .site-footer {
+width: 22.5rem;
+direction: rtl;
 }
