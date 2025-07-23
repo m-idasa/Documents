@@ -1,10 +1,8 @@
-body {
-  font-family: 'Vazirmatn', sans-serif;
+.main-content ul > li::before {
+  display: block;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, li, td, th, ul {
-  direction: rtl;
+body {
   unicode-bidi: plaintext;
 }
 
