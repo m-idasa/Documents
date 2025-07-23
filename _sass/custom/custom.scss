@@ -2,7 +2,9 @@
   display: block;
 }
 
-body {
+h1, h2, h3, h4, h5, h6,
+p, li, td, th, ul {
+  direction: rtl;
   unicode-bidi: plaintext;
 }
 
@@ -31,7 +33,3 @@ direction: rtl;
 display: none;
 }
 
-.site-title {
-    padding-right: 0;
-    padding-left: 0;
-  }
