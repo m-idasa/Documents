@@ -3,12 +3,8 @@
 }
 
 h1, h2, h3, h4, h5, h6,
-p, td, th, ol {
+p, td, th, ol, ul, li {
   direction: rtl;
-  unicode-bidi: plaintext;
-}
-
-li, ul{
   unicode-bidi: plaintext;
 }
 
