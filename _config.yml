@@ -12,4 +12,4 @@ just_the_docs:
   css:
     - /assets/css/custom.css
 
-color_scheme: legacy_light
+color_scheme: dark

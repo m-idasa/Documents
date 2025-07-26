@@ -10,9 +10,9 @@ nav_order: 2
 
 ## 📌 آدرس سرویس
 
-- **WSDL:**  
+**WSDL:**  
   http://service.tsetmc.com/WebService/TsePublicV2.asmx?WSDL  
-- **Endpoint:**  
+**Endpoint:**  
   http://service.tsetmc.com/WebService/TsePublicV2.asmx
 
 ## 🧾 نام سرویس

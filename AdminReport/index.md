@@ -4,6 +4,48 @@ layout: default
 parent: مستندات سرویس‌ها
 ---
 
+<style>
+  .tab {
+    overflow: hidden;
+    border: 1px solid #302d36;
+    border-bottom: none;
+    background: #302d36;
+    
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #31343f;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #31343f;
+    
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #31343f;
+    border-top: none;
+    background: #31343f;
+    direction: ltr
+  }  
+</style>
 # گزارش های مدیریتی
 
 ## GET /api/admin (Admin)
