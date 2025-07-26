@@ -35,7 +35,7 @@ It will take some minutes to deploy, then you can find your static documentation
 
 - Add any thing to Head in /_incloudes/head_custom.html such as links or meta tags
 
-
+- To check if your chages build and deployed complety you can navigate to Actions tab in github 
 
 
 
