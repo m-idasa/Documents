@@ -1,5 +1,5 @@
 ---
-title: اطلاعات معاملات آخرین روز (TradeLastDay)
+title: تغییر وضعیت نماد - InstrumentStateChange
 layout: default
 nav_order: 3
 ---
