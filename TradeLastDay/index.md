@@ -1,7 +1,7 @@
 ---
 title: اطلاعات معاملات آخرین روز (TradeLastDay)
 layout: default
-nav_order: 2
+parent: معاملات
 ---
 
 # اطلاعات معاملات آخرین روز (TradeLastDay)
@@ -10,10 +10,19 @@ nav_order: 2
 
 ## 📌 آدرس سرویس
 
-**WSDL:**  
-  http://service.tsetmc.com/WebService/TsePublicV2.asmx?WSDL  
-**Endpoint:**  
-  http://service.tsetmc.com/WebService/TsePublicV2.asmx
+```
+POST /api/TradeLastDay
+Host: {BaseUrl}
+Authorization: Bearer {token}
+Content-Type: application/json
+```
+
+مثال:
+```
+POST https://example.com/api/TradeLastDay
+```
+
+---
 
 ## 🧾 نام سرویس
 
@@ -27,8 +36,6 @@ nav_order: 2
 
 | نام پارامتر | نوع | توضیح |
 |-------------|------|-------|
-| `UserName` | string | نام کاربری مشترک |
-| `Password` | string | کلمه عبور مشترک |
 | `Flow` | integer | نوع بازار:<br>0: عمومی<br>1: بورس<br>2: فرابورس<br>3: آتی<br>4: پایه فرابورس<br>5: پایه فرابورس (منتشر نمی‌شود)<br>6: بورس انرژی<br>7: بورس کالا |
 
 ## 📤 ساختار خروجی
@@ -54,7 +61,7 @@ nav_order: 2
 | `Last` | unsignedByte | وضعیت آخر |
 | `HEven` | int | ساعت |
 
-## 📦 نمونه Request (SOAP)
+## 📦 نمونه Request 
 
 ```xml
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -72,25 +79,27 @@ nav_order: 2
 
 ## 📄 نمونه خروجی
 
-```xml
-<TradeLastDay>
-  <LVal18AFC>فملی</LVal18AFC>
-  <DEven>20250722</DEven>
-  <ZTotTran>340</ZTotTran>
-  <QTotTran5J>120000</QTotTran5J>
-  <QTotCap>8750000000</QTotCap>
-  <InsCode>1234567890</InsCode>
-  <LVal30>ملی صنایع مس ایران</LVal30>
-  <PClosing>7300</PClosing>
-  <PDrCotVal>7350</PDrCotVal>
-  <PriceChange>+50</PriceChange>
-  <PriceMin>7200</PriceMin>
-  <PriceMax>7400</PriceMax>
-  <PriceFirst>7250</PriceFirst>
-  <PriceYesterday>7250</PriceYesterday>
-  <Last>1</Last>
-  <HEven>123015</HEven>
-</TradeLastDay>
+```json
+{
+  "TradeSelectedDate": {
+    "TradeSelectedDate": {
+      "LVal18AFC": "نماد نمونه",
+      "DEven": 20240101,
+      "ZTotTran": 120,
+      "QTotTran5J": 350000,
+      "QTotCap": 500000000,
+      "InsCode": 1234567890,
+      "LVal30": "شرکت نمونه",
+      "PClosing": 1500,
+      "PDrCotVal": 1520,
+      "PriceChange": "+20",
+      "PriceMin": 1480,
+      "PriceMax": 1530,
+      "PriceFirst": 1500,
+      "PriceYesterday": 1480
+    }
+  }
+}
 ```
 
 
