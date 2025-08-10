@@ -13,10 +13,23 @@ parent: معاملات
 
 ## مشخصات سرویس
 - **آدرس سرویس:**  
-  `http://service.tsetmc.com/WebService/TsePublicV2.asmx`  
-  `http://service.tsetmc.com/WebService/TsePublicV2.asmx?WSDL`
+
+```
+POST /api/TradeOneDayAll
+Host: {BaseUrl}
+Authorization: Bearer {token}
+Content-Type: application/json
+```
+
+مثال:
+```
+POST http://service.tsetmc.com/Trade/TradeOneDay
+```
+
+---
+  
 - **نام سرویس:** `TradeOneDay`
-- **توضیحات:** ارائه اطلاعات معاملات روزانه بازارهای مختلف
+- **توضیحات:** ارائه اطلاعات معاملات روزانه بازارهای 
 
 ---
 
@@ -24,9 +37,6 @@ parent: معاملات
 
 | نام پارامتر | نوع | توضیحات |
 |-------------|------|---------|
-| UserName    | string | نام کاربری مشترک |
-| Password    | string | کلمه عبور مشترک |
-| SelDate     | string (yyyyMMdd) | تاریخ مورد نظر |
 | Flow        | int | کد بازار: <br>0: عمومی (بورس و فرابورس) <br>1: بورس <br>2: فرابورس <br>3: آتی <br>4: پایه فرابورس <br>5: پایه فرابورس (منتشر نمی‌شود) <br>6: بورس انرژی <br>7: بورس کالا |
 
 ---
@@ -52,7 +62,9 @@ parent: معاملات
   "PriceMin": 14900,
   "PriceMax": 15200,
   "PriceFirst": 15050,
-  "PriceYesterday": 14900
+  "PriceYesterday": 14900,
+  "Last": 0,
+  "HEven": 112530
 }
 
 ```
@@ -77,48 +89,7 @@ parent: معاملات
 | PriceMax | حداکثر قیمت |
 | PriceFirst | قیمت اولین معامله |
 | PriceYesterday | قیمت دیروز |
-
----
-
-## نمونه درخواست 
-
-```json
-POST /api/TradeOneDay
-Content-Type: application/json
-
-{
-  "UserName": "demo",
-  "Password": "1234",
-  "SelDate": "20230815",
-  "Flow": 1
-}
-```
-
----
-
-## نمونه پاسخ 
-
-```json
-{
-  "TradeSelectedDate": {
-    "TradeSelectedDate": {
-      "LVal18AFC": "نماد نمونه",
-      "DEven": 20240101,
-      "ZTotTran": 120,
-      "QTotTran5J": 350000,
-      "QTotCap": 500000000,
-      "InsCode": 1234567890,
-      "LVal30": "شرکت نمونه",
-      "PClosing": 1500,
-      "PDrCotVal": 1520,
-      "PriceChange": "+20",
-      "PriceMin": 1480,
-      "PriceMax": 1530,
-      "PriceFirst": 1500,
-      "PriceYesterday": 1480
-    }
-  }
-}
-```
+| Last | آخرین رکورد بودن |
+| HEven | زمان |
 
 ---

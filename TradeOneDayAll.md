@@ -75,24 +75,22 @@ Body (JSON):
 
 ### نمونه پاسخ:
 ```json
-[
-  {
-    "LVal18AFC": "خودرو",
-    "DEven": 20250808,
-    "ZTotTran": 1250,
-    "QTotTran5J": 2350000,
-    "QTotCap": 15800000000,
-    "InsCode": 12345678901234567,
-    "LVal30": "ایران خودرو",
-    "PClosing": 15250,
-    "PDrCotVal": 15300,
-    "PriceChange": 50,
-    "PriceMin": 15000,
-    "PriceMax": 15500,
-    "PriceFirst": 15100,
-    "PriceYesterday": 15200
-  }
-]
+{
+  "LVal18AFC": "خودرو",
+  "DEven": 20250808,
+  "ZTotTran": 1250,
+  "QTotTran5J": 2350000,
+  "QTotCap": 15800000000,
+  "InsCode": 12345678901234567,
+  "LVal30": "ایران خودرو",
+  "PClosing": 15250,
+  "PDrCotVal": 15300,
+  "PriceChange": 50,
+  "PriceMin": 15000,
+  "PriceMax": 15500,
+  "PriceFirst": 15100,
+  "PriceYesterday": 15200
+}
 ```
 
 ---
