@@ -34,27 +34,27 @@ parent: معاملات
 ## ساختار خروجی (Dataset)
 
 ```json
-[
-  {
-    "LVal18AFC": "نماد",
-    "DEven": 20230815,
-    "ZTotTran": 150,
-    "QTotTran5J": 250000,
-    "QTotCap": 1250000000,
-    "InsCode": 1234567890,
-    "LVal30": "توضیح نماد",
-    "PClosing": 15000,
-    "PDrCotVal": 15100,
-    "ZTotTran1": 150,
-    "QTotTran5J1": 250000,
-    "QTotCap1": 1250000000,
-    "PriceChange": 100,
-    "PriceMin": 14900,
-    "PriceMax": 15200,
-    "PriceFirst": 15050,
-    "PriceYesterday": 14900
-  }
-]
+
+{
+  "LVal18AFC": "نماد",
+  "DEven": 20230815,
+  "ZTotTran": 150,
+  "QTotTran5J": 250000,
+  "QTotCap": 1250000000,
+  "InsCode": 1234567890,
+  "LVal30": "توضیح نماد",
+  "PClosing": 15000,
+  "PDrCotVal": 15100,
+  "ZTotTran1": 150,
+  "QTotTran5J1": 250000,
+  "QTotCap1": 1250000000,
+  "PriceChange": 100,
+  "PriceMin": 14900,
+  "PriceMax": 15200,
+  "PriceFirst": 15050,
+  "PriceYesterday": 14900
+}
+
 ```
 
 ---
@@ -80,7 +80,7 @@ parent: معاملات
 
 ---
 
-## نمونه درخواست SOAP
+## نمونه درخواست 
 
 ```json
 POST /api/TradeOneDay
@@ -96,27 +96,29 @@ Content-Type: application/json
 
 ---
 
-## نمونه پاسخ SOAP
+## نمونه پاسخ 
 
-```xml
-<TradeSelectedDate>
-  <TradeSelectedDate>
-    <LVal18AFC>نماد نمونه</LVal18AFC>
-    <DEven>20240101</DEven>
-    <ZTotTran>120</ZTotTran>
-    <QTotTran5J>350000</QTotTran5J>
-    <QTotCap>500000000</QTotCap>
-    <InsCode>1234567890</InsCode>
-    <LVal30>شرکت نمونه</LVal30>
-    <PClosing>1500</PClosing>
-    <PDrCotVal>1520</PDrCotVal>
-    <PriceChange>+20</PriceChange>
-    <PriceMin>1480</PriceMin>
-    <PriceMax>1530</PriceMax>
-    <PriceFirst>1500</PriceFirst>
-    <PriceYesterday>1480</PriceYesterday>
-  </TradeSelectedDate>
-</TradeSelectedDate>
+```json
+{
+  "TradeSelectedDate": {
+    "TradeSelectedDate": {
+      "LVal18AFC": "نماد نمونه",
+      "DEven": 20240101,
+      "ZTotTran": 120,
+      "QTotTran5J": 350000,
+      "QTotCap": 500000000,
+      "InsCode": 1234567890,
+      "LVal30": "شرکت نمونه",
+      "PClosing": 1500,
+      "PDrCotVal": 1520,
+      "PriceChange": "+20",
+      "PriceMin": 1480,
+      "PriceMax": 1530,
+      "PriceFirst": 1500,
+      "PriceYesterday": 1480
+    }
+  }
+}
 ```
 
 ---
