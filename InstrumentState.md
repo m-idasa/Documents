@@ -1,5 +1,5 @@
 ---
-title: فهرست و مشخصات نمادها
+title: وضعیت نمادها
 layout: default
 parent: نمادها
 ---
