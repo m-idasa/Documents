@@ -42,7 +42,6 @@ Body (JSON):
 |------------|-------|-------|
 | InsCode    | int | کد داخلي نماد |
 
-
 ## پاسخ
 
 پاسخ در قالب JSON برمی‌گردد.
@@ -65,7 +64,9 @@ Body (JSON):
 
 ```json
 {
-  "InsCode": 134623465465
+  "Flow":{
+    "InsCode": 134623465465
+  }
 }
 ```
 
@@ -76,38 +77,16 @@ Body (JSON):
   "IsSuccess": true,
   "Data": [
     {
-      "DEVen": 0,
-      "InsCode": 0,
-      "InstrumentID": "string",
-      "CValMne": "string",
-      "LVal18": "string",
-      "CSocCSAC": "string",
-      "LSoc30": "string",
-      "LVal18AFC": "string",
-      "LVal30": "string",
-      "CIsin": "string",
-      "QNmVlo": 0.0,
-      "ZTitad": 0.0,
-      "DESop": 0,
-      "YOPSJ": 0,
-      "CGdSVal": "string",
-      "CGrValCot": "string",
-      "DInMar": 0,
-      "YUniExpP": 0,
-      "YMarNSC": "string",
-      "CComVal": "string",
-      "CSecVal": "string",
-      "CSoSecVal": "string",
-      "YDeComp": 0,
-      "PSaiSMaxOkValMdv": 0.0,
-      "PSaiSMinOkValMdv": 0.0,
-      "BaseVol": 0,
-      "YVal": 0,
-      "QPasCotFxeVal": 0,
-      "QQtTranMarVal": 0,
-      "Flow": 0,
-      "QtitMinSaiOmProd": 0,
-      "QtitMaxSaiOmProd": 0
+      "InsCode": "123456789",
+      "CGrValCot": "01",
+      "InstrumentID": "IRB123456789",
+      "CValMne": "ABCD1",
+      "LVal18": "SOME-LATIN-NAME",
+      "CSocCSAC": "COMP1",
+      "LSoc30": "شرکت نمونه",
+      "LVal18AFC": "نماد نمونه",
+      "LVal30": "نماد نمونه بازار",
+      "CIsin": "IRO123456789"
     }
   ],
   "Msg": null
