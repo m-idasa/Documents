@@ -4,12 +4,12 @@ layout: default
 parent: نمادها
 ---
 
-# InstrumentFilterByDate - فهرست و مشخصات نمادهای جدید و تغییر یافته
+# فهرست و مشخصات نمادهای جدید و تغییر یافته
 
 ## 📌 آدرس سرویس
 
 ```
-POST /Instrument/Instrument
+POST /Instrument/InstrumentFilterByDate
 Host: {BaseUrl}
 Authorization: Bearer {token}
 Content-Type: application/json
@@ -20,11 +20,11 @@ Content-Type: application/json
 POST http://service.tsetmc.com/Instrument/InstrumentFilterByDate
 ```
 
----
-
 ## 🧾 نام سرویس
 
-`Instrument`
+`InstrumentFilterByDate`
+
+---
 
 ## 🎯 توضیحات
 
@@ -100,6 +100,8 @@ Body (JSON):
 | `QtitMaxSaiOmProd` | حداکثر حجم مجاز سفارش |
 | `Valid` | اعتبار نماد (0: قدیمی، 1: معتبر) |
 
+---
+
 ## 📦 نمونه ورودی 
 
 ```json
@@ -154,11 +156,11 @@ Body (JSON):
 }
 ```
 
+---
+
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
----
 
 ## خطاهای محتمل
 

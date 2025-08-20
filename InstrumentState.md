@@ -4,15 +4,27 @@ layout: default
 parent: نمادها
 ---
 
-# InstrumentsState - وضعیت نمادها
+# وضعیت نمادها
 
 ## 📌 آدرس سرویس
+  
+```
+POST /Instrument/InstrumentsState
+Host: {BaseUrl}
+Authorization: Bearer {token}
+Content-Type: application/json
+```
 
-  - `http://service.tsetmc.com/Instrument/InstrumentState`  
+مثال:
+```
+POST http://service.tsetmc.com/Instrument/InstrumentsState
+```
 
 ## 🧾 نام سرویس
 
 `InstrumentsState`
+
+---
 
 ## 🎯 توضیحات
 
@@ -46,7 +58,6 @@ Body (JSON):
 | `7` | کالا |
 | `5` | پایه فرابورس |
 
-
 ## پاسخ
 
 پاسخ در قالب JSON برمی‌گردد.
@@ -76,6 +87,8 @@ Body (JSON):
 | `IS` | ممنوع-متوقف |
 | `IR` | ممنوع-محفوظ |
 
+---
+
 ## 📦 نمونه ورودی 
 
 ```json
@@ -103,11 +116,11 @@ Body (JSON):
 }
 ```
 
+---
+
 ## نکات امنیتی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
----
 
 ## خطاهای محتمل
 
