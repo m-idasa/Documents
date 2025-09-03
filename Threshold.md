@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/MarketInfo/Threshold
 
  کمینه و بیشینه قیمت مجاز نمادها
 
+---
+
 ## درخواست
 
 پارامترهای ورودی در قالب JSON ارسال می‌گردد.

@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/Instrument/InstrumentTseShare
 
 تغییرات تعداد سهم نمادها را ارائه می دهد.
 
+---
+
 ## درخواست
 
 پارامترهای ورودی در قالب JSON ارسال می‌گردد.

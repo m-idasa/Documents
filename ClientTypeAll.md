@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/ClientType/ClientTypeAll
 
  اطلاعات معاملات به تفکیک حقیقی و حقوقی
 
+---
+
 ## درخواست
 
 این سرویس هیچ پارامتر ورودی ندارد.
@@ -39,6 +41,7 @@ POST http://service.tsetmc.com/ClientType/ClientTypeAll
 پاسخ در قالب JSON برمی‌گردد.
 
 ### 📤 ساختار خروجی:
+
 | نام ستون               | توضیح |
 |------------------------|-------|
 | `RecDate`                | تاریخ رکورد |

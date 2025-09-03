@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/MarketInfo/SubSector
 
    اطلاعات زیر گروه هاي صنعت را ارائه مي کند. 
 
+---
+
 ## درخواست
 
 این سرویس هیچ پارامتر ورودی ندارد.

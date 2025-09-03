@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/Energy/PowerInstrument
 
 سرویس **PowerInstrument** فهرست نمادهای فعال بازار برق را ارائه می‌کند.
 
+---
+
 ## درخواست
 
 این سرویس هیچ پارامتر ورودی ندارد.

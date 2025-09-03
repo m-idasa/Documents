@@ -24,6 +24,8 @@ POST http://service.tsetmc.com/Instrument/InstrumentStateChange
 
 `InstrumentStateChange`
 
+---
+
 ## 🎯 توضیحات
 
 سرویسی جهت دریافت وضعیت‌های جدید یا تغییر یافته نمادها

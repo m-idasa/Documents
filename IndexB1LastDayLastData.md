@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/Index/IndexB1LastDayLastData
 
  اطلاعات آخرين روز شاخص ها را ارائه مي کند. 
 
+---
+
 ## درخواست
 
 پارامترهای ورودی در قالب JSON ارسال می‌گردد.

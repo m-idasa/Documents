@@ -30,6 +30,7 @@ POST http://service.tsetmc.com/Index/IndexInstrument
 
 اطلاعات نمادهاي هر شاخص را ارائه مي کند. 
 
+---
 
 ## درخواست
 

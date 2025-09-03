@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/Instrument/InstrumentFilterByDate
 
 اطلاعات مربوط به نمادهای جدید و یا تغییر یافته از یک تاریخ به بعد را ارائه می‌کند.  
 
+---
+
 ## درخواست
 
 پارامترهای ورودی در قالب JSON ارسال می‌گردد.

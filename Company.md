@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/MarketInfo/Company
 
  اطلاعات مربوط به شرکتها را ارائه مي کند. 
 
+---
+
 ## درخواست
 
 پارامترهای ورودی در قالب JSON ارسال می‌گردد.

@@ -30,6 +30,8 @@ POST http://service.tsetmc.com/MarketInfo/Board
 
   ليست تابلوها را ارائه مي کند. 
 
+---
+
 ## درخواست
 
 این سرویس هیچ پارامتر ورودی ندارد.
