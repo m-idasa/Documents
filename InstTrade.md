@@ -41,7 +41,7 @@ Body (JSON):
 
 | نام فیلد   | نوع داده | توضیحات |
 |------------|----------|---------|
-| InsCode  | long     | کد داخلی نماد |
+| Inscode  | long     | کد داخلی نماد |
 | DateFrom | decimal   | تاریخ شروع به فرمت `YYYYMMDD` |
 | DateTo   | decimal   | تاریخ پایان به فرمت `YYYYMMDD` |
 
@@ -77,7 +77,7 @@ Body (JSON):
 
 ```json
 {
-  "InsCode": 006101034107,
+  "Inscode": 006101034107,
   "DateFrom": 20250809,
   "DateTo": 20250910
 }

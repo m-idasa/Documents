@@ -66,14 +66,6 @@ POST http://service.tsetmc.com/Energy/PowerInstrument
 
 ---
 
-## 📦 نمونه ورودی 
-
-```json
-{
-  "Flow": 1
-}
-```
-
 ## 📄 نمونه خروجی
 
 ```json
