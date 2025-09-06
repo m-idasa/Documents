@@ -8,7 +8,7 @@ parent: شاخص
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/Index/IndexInstrument
 ```
 

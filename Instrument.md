@@ -8,7 +8,7 @@ parent: نمادها
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/Instrument/Instrument
 ```
 

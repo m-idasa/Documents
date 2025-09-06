@@ -8,7 +8,7 @@ parent: بهترین ها
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/BestLimit/BestLimitOneIns
 ```
 

@@ -8,7 +8,7 @@ parent: معاملات مشتقه
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/Derivate/Option
 ```
 

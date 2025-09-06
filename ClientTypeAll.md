@@ -9,15 +9,15 @@ parent: نوع خریداران
 ## 📌 آدرس سرویس
 
 ```
-POST /ClientType/ClientTypeAll
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+POST http://{BaseUrl}/ClientType/ClientTypeAll
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/ClientType/ClientTypeAll
+
+```bash
+curl --location 'https://{BaseUrl}/ClientType/ClientTypeAll' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}'
 ```
 
 ## 🧾 نام سرویس

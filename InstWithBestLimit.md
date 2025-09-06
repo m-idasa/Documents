@@ -8,7 +8,7 @@ parent: برترین ها
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/BestLimit/InstWithBestLimit
 ```
 

@@ -8,7 +8,7 @@ parent: نوع خریداران
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/ClientType/ClientTypeByDate
 ```
 
