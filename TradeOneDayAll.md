@@ -8,7 +8,7 @@ parent: معاملات
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://service.tsetmc.com/Trade/TradeOneDayAll
 ```
 

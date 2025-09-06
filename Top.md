@@ -8,7 +8,7 @@ parent: اطلاعات بازار
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://service.tsetmc.com/MarketInfo/Top
 ```
 

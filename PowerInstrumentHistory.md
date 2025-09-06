@@ -10,7 +10,7 @@ parent: انرژی
 
 ## 📌 آدرس سرویس
 
-```http
+```
 POST http://{BaseUrl}/Energy/PowerInstrumentHistory
 ```
 
