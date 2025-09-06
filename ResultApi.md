@@ -1,7 +1,7 @@
 ---
 title: ساختار پاسخ دهی وب سرویس‌ها
 layout: default
-parent: مستندات سرویسها
+parent: مستندات سرویس‌ها
 nav_order: 1
 ---
 
