@@ -12,9 +12,22 @@ nav_order: 1
 این توکن در تمامی درخواست‌های بعدی در هدر `Authorization` استفاده خواهد
 شد.
 
-## متد
+## آدرس
 
-`POST /Login`
+```
+POST https://{BaseUrl}/Login
+```
+
+مثال:
+
+```bash
+curl --location 'https://{BaseUrl}/login' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+        "UserName": "broker",
+        "Password": "Test@123"
+    }'
+```
 
 ## ورودی (LoginRequestDto)
 
