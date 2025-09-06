@@ -1,5 +1,5 @@
 ---
-title: روش اهراز هویت
+title: روش احراز هویت
 layout: default
 parent: مستندات سرویس‌ها
 nav_order: 1
