@@ -24,8 +24,8 @@ POST https://{BaseUrl}/Login
 curl --location 'https://{BaseUrl}/login' \
 --header 'Content-Type: application/json' \
 --data-raw '   {
-        "UserName": "broker",
-        "Password": "Test@123"
+        "UserName": "testuser",
+        "Password": "P@ssw0rd"
     }'
 ```
 

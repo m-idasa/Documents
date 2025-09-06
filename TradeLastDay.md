@@ -9,7 +9,7 @@ parent: معاملات
 ## 📌 آدرس سرویس
 
 ```
-POST http://service.tsetmc.com/Trade/TradeLastDay
+POST http://{BaseUrl}/Trade/TradeLastDay
 ```
 
 مثال:

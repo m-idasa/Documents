@@ -9,7 +9,7 @@ parent: اطلاعات بازار
 ## 📌 آدرس سرویس
 
 ```
-POST http://service.tsetmc.com/MarketInfo/Top
+POST http://{BaseUrl}/MarketInfo/Top
 ```
 
 مثال:
