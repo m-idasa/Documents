@@ -8,16 +8,20 @@ parent: شاخص
 
 ## 📌 آدرس سرویس
 
-```
-POST /Index/IndexB1LastDayOneInst
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Index/IndexB1LastDayOneInst
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Index/IndexB1LastDayOneInst
+
+```bash
+curl --location 'https://{BaseUrl}/Index/IndexB1LastDayOneInst' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1,
+  "IdxCode": 544233543589
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,10 +44,10 @@ POST http://service.tsetmc.com/Index/IndexB1LastDayOneInst
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| `Flow` | کد بازار |
-| `IdxCode` | کد داخلی شاخص |
+| نام فیلد  | نوع داده  | توضیحات |
+|------------|-------|-------|
+| `Flow`    | int | کد بازار |
+| `IdxCode` | long | کد داخلی شاخص |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -107,13 +111,5 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

@@ -8,17 +8,19 @@ parent: اطلاعات بازار
 
 ## 📌 آدرس سرویس
 
-```
-POST /MarketInfo/Sector
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+## 📌 آدرس سرویس
+
+```http
+POST http://{BaseUrl}/MarketInfo/Sector
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/MarketInfo/Sector
-```
+
+```bash
+curl --location 'https://{BaseUrl}/MarketInfo/Sector' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}'
+```  
 
 ## 🧾 نام سرویس
 
@@ -70,15 +72,6 @@ POST http://service.tsetmc.com/MarketInfo/Sector
 
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---
 

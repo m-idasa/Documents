@@ -8,16 +8,19 @@ parent: نوع خریداران
 
 ## 📌 آدرس سرویس
 
-```
-POST /ClientType/ClientTypeByDate
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/ClientType/ClientTypeByDate
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/ClientType/ClientTypeByDate
+
+```bash
+curl --location 'https://{BaseUrl}/ClientType/ClientTypeByDate' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+    "Deven": 20250101
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,9 +43,10 @@ POST http://service.tsetmc.com/ClientType/ClientTypeByDate
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| `Deven` | تاریخ |
+| نام فیلد  | نوع داده  | توضیحات |
+|------------|-------|-------|
+| `Deven`    | int | تاریخ به فرمت YYYYMMDD |
+
 
 ## پاسخ
 
@@ -110,15 +114,4 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
 
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
-
 ---
-
-

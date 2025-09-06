@@ -8,16 +8,19 @@ parent: نمادها
 
 ## 📌 آدرس سرویس
 
-```
-POST /Instrument/Instrument
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Instrument/Instrument
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Instrument/Instrument
+
+```bash
+curl --location 'https://{BaseUrl}/Instrument/Instrument' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,9 +43,9 @@ POST http://service.tsetmc.com/Instrument/Instrument
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| `Flow` | کد بازار |
+| نام پارامتر | نوع داده | توضیح |
+|------- | --- |-------|
+| `Flow` | int | کد بازار |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -162,13 +165,5 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

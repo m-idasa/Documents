@@ -8,16 +8,16 @@ parent: معاملات مشتقه
 
 ## 📌 آدرس سرویس
 
-```
-POST /Derivate/Future
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Derivate/Future
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Derivate/Future
+
+```bash
+curl --location 'https://{BaseUrl}/Derivate/Future' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' 
 ```
 
 ## 🧾 نام سرویس
@@ -130,15 +130,4 @@ POST http://service.tsetmc.com/Derivate/Future
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
 
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
-
 ---
-
-

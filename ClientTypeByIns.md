@@ -8,16 +8,19 @@ parent: نوع خریداران
 
 ## 📌 آدرس سرویس
 
-```
-POST /ClientType/ClientTypeByIns
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/ClientType/ClientTypeByIns
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/ClientType/ClientTypeByIns
+
+```bash
+curl --location 'https://{BaseUrl}/ClientType/ClientTypeByIns' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+    "Inscode": 124234234235
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,9 +43,9 @@ POST http://service.tsetmc.com/ClientType/ClientTypeByIns
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| `Inscode` | کد نماد |
+| نام فیلد  | نوع داده  | توضیحات |
+|------------|-------|-------|
+| `Inscode`    | long | کد داخلي نماد |
 
 ## پاسخ
 
@@ -110,15 +113,4 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
 
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
-
 ---
-
-

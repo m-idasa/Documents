@@ -7,18 +7,22 @@ parent: نمادها
 # تغییر وضعیت نماد
 
 ## 📌 آدرس سرویس
-  
-```
-POST /Instrument/InstrumentStateChange
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+
+```http
+POST http://{BaseUrl}/Instrument/InstrumentStateChange
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Instrument/InstrumentStateChange
-```
+
+```bash
+curl --location 'https://{BaseUrl}/Instrument/InstrumentStateChange' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1,
+  "Inscode": 20250101
+}'
+```  
 
 ## 🧾 نام سرویس
 
@@ -40,9 +44,9 @@ POST http://service.tsetmc.com/Instrument/InstrumentStateChange
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| `Inscode`   | کد داخلی نماد |
+| نام پارامتر | نوع داده | توضیح |
+|------- | --- |-------|
+| `Inscode` | long  | کد داخلی نماد |
 | `Deven`     | تاریخ به فرمت `YYYYMMDD` |
 
 ## پاسخ
@@ -109,13 +113,5 @@ Body (JSON):
 ## نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

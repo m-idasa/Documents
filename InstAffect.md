@@ -8,16 +8,20 @@ parent: شاخص
 
 ## 📌 آدرس سرویس
 
-```
-POST /Index/InstAffect
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Index/InstAffect
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Index/InstAffect
+
+```bash
+curl --location 'https://{BaseUrl}/Index/InstAffect' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1,
+  "IdxCode": 544233543589
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -84,13 +88,5 @@ POST http://service.tsetmc.com/Index/InstAffect
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

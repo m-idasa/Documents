@@ -8,17 +8,17 @@ parent: انرژی
 
 ## 📌 آدرس سرویس
 
-```
-POST /Energy/PowerInstrument
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Energy/PowerInstrument
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Energy/PowerInstrument
-```
+
+```bash
+curl --location 'https://{BaseUrl}/Energy/PowerInstrument' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' 
+```  
 
 ## 🧾 نام سرویس
 
@@ -102,15 +102,6 @@ POST http://service.tsetmc.com/Energy/PowerInstrument
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
 - فقط کاربرانی که نقش `PowerInstrument` دارند می‌توانند این سرویس را فراخوانی کنند.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---
 

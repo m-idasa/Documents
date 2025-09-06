@@ -8,16 +8,19 @@ parent: بهترین ها
 
 ## 📌 آدرس سرویس
 
-```
-POST /BestLimit/BestLimitOneIns
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/BestLimit/BestLimitOneIns
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/BestLimit/BestLimitOneIns
+
+```bash
+curl --location 'https://{BaseUrl}/BestLimit/BestLimitOneIns' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+    "Inscode": 134623465465
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -100,13 +103,5 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

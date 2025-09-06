@@ -8,17 +8,21 @@ parent: معاملات
 
 ## 📌 آدرس سرویس
 
-```
-POST /Trade/TradeOneDay
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://service.tsetmc.com/Trade/TradeOneDay
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Trade/TradeOneDay
-```
+
+```bash
+curl --location 'https://{BaseUrl}/Trade/TradeOneDay' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1,
+  "Deven": 2025101
+}'
+```  
 
 ---
   
@@ -42,8 +46,8 @@ POST http://service.tsetmc.com/Trade/TradeOneDay
 
 | نام پارامتر | نوع | توضیحات |
 |-------------|------|---------|
-| Deven   | decimal   | تاریخ پایان به فرمت `YYYYMMDD`|
-| Flow        | int | کد بازار |
+| Deven   | int   | تاریخ پایان به فرمت `YYYYMMDD`|
+| Flow    | int | کد بازار |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -133,14 +137,5 @@ POST http://service.tsetmc.com/Trade/TradeOneDay
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
 - مقادیر `Flow` عددی هستند و نقش تعیین بازار هدف را دارند.
 - خروجی با ساختار `DataSet` است و ممکن است شامل چندین رکورد `TradeLastDay` باشد.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

@@ -8,16 +8,19 @@ parent: شاخص
 
 ## 📌 آدرس سرویس
 
-```
-POST /Index/Indexb2
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/Index/Indexb2
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Index/Indexb2
+
+```bash
+curl --location 'https://{BaseUrl}/Index/Indexb2' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Deven": 20250101
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,9 +43,9 @@ POST http://service.tsetmc.com/Index/Indexb2
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| Deven   | تاریخ پایان به فرمت `YYYYMMDD`|
+| نام پارامتر | نوع داده | توضیح |
+|------ | --- | ------------------------------ |
+| Deven | int | تاریخ پایان به فرمت `YYYYMMDD`|
 
 ## پاسخ
 
@@ -77,8 +80,7 @@ Body (JSON):
 
 ```json
 {
-  "Flow": 1,
-  "IdxCode": 544233543589
+  "Deven": 20250101
 }
 ```
 
@@ -120,13 +122,5 @@ Body (JSON):
 ## ✍️ نکات تکمیلی
 
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

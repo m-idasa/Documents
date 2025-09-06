@@ -8,17 +8,20 @@ parent: اطلاعات بازار
 
 ## 📌 آدرس سرویس
 
-```
-POST /MarketInfo/Threshold
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/MarketInfo/Threshold
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/MarketInfo/Threshold
-```
+
+```bash
+curl --location 'https://{BaseUrl}/MarketInfo/Threshold' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1
+}'
+```  
 
 ## 🧾 نام سرویس
 
@@ -40,10 +43,9 @@ POST http://service.tsetmc.com/MarketInfo/Threshold
 
 Body (JSON):
 
-| نام پارامتر | توضیح  |
-| ----------- | ------- | 
-| `Flow`     | کد بازار |
-
+| نام فیلد  | نوع داده  | توضیحات |
+|------------|-------|-------|
+| `Flow`    | int | کد بازار |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -75,6 +77,14 @@ Body (JSON):
 
 ---
 
+## 📦 نمونه ورودی 
+
+```json
+{
+  "Flow": 1
+}
+```
+
 ## 📄 نمونه خروجی
 
 ```json
@@ -97,14 +107,5 @@ Body (JSON):
 
 ## ✍️ نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

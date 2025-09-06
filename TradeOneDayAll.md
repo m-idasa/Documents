@@ -8,17 +8,21 @@ parent: معاملات
 
 ## 📌 آدرس سرویس
 
-```
-POST /Trade/TradeOneDayAll
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://service.tsetmc.com/Trade/TradeOneDayAll
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/Trade/TradeOneDayAll
-```
+
+```bash
+curl --location 'https://{BaseUrl}/Trade/TradeOneDayAll' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+  "Flow": 1,
+  "Deven": 2025101
+}'
+```  
 
 ## 🧾 نام سرویس
 
@@ -43,8 +47,8 @@ Body (JSON):
 
 | نام فیلد  | نوع داده  | توضیحات |
 |-----------|-----------|---------|
-| `Deven`   | decimal   | تاریخ پایان به فرمت `YYYYMMDD`|
-| `Flow`    | integer   | کد بازار |
+| `Deven`   | int | تاریخ پایان به فرمت `YYYYMMDD`|
+| `Flow`    | int | کد بازار |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -135,16 +139,5 @@ Body (JSON):
 - محدودیت دسترسی بر اساس [CheckCredit] اعمال می‌شود.
 - مقادیر `Flow` عددی هستند و نقش تعیین بازار هدف را دارند.
 - خروجی با ساختار `DataSet` است و ممکن است شامل چندین رکورد `TradeLastDay` باشد.
-
----
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 403 | عدم دسترسی (کاربر نقش لازم را ندارد) |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
 
 ---

@@ -8,16 +8,19 @@ parent: برترین ها
 
 ## 📌 آدرس سرویس
 
-```
-POST /BestLimit/BestLimitsAllIns
-Host: {BaseUrl}
-Authorization: Bearer {token}
-Content-Type: application/json
+```http
+POST http://{BaseUrl}/BestLimit/BestLimitsAllIns
 ```
 
 مثال:
-```
-POST http://service.tsetmc.com/BestLimit/BestLimitsAllIns
+
+```bash
+curl --location 'https://{BaseUrl}/BestLimit/BestLimitsAllIns' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {token}' \
+--data '{
+    "Flow": 1
+}'
 ```
 
 ## 🧾 نام سرویس
@@ -40,9 +43,9 @@ POST http://service.tsetmc.com/BestLimit/BestLimitsAllIns
 
 Body (JSON):
 
-| نام پارامتر | توضیح |
-|------------|-------|
-| Flow        | int | کد بازار |
+| نام پارامتر | نوع داده | توضیح |
+|------ | --- | --------- |
+| `Flow` | int | کد بازار |
 
 #### مقادیر ممکن برای `Flow`
 
@@ -114,26 +117,5 @@ Body (JSON):
 
 ## نکات تکمیلی
 - حتماً باید در هدر درخواست، **توکن JWT معتبر** ارسال شود.
-
-## خطاهای محتمل
-
-| کد وضعیت HTTP | توضیح |
-|---------------|-------|
-| 401 | عدم احراز هویت یا توکن نامعتبر |
-| 400 | داده ورودی نامعتبر |
-| 500 | خطای داخلی سرور |
-
-### کد نمونه پاسخ برای خطاها
-- `400 Bad Request` - پارامترهای ورودی ناقص یا نامعتبر  
-- `401 Unauthorized` - خطای احراز هویت  
-- `500 Internal Server Error` - خطای سرور
-
-```json
-{
-  "status": "error",
-  "message": "Invalid username or password",
-  "code": 401
-}
-```
 
 ---
