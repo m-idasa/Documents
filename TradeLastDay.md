@@ -72,24 +72,24 @@ Body (JSON):
 
 خروجی به صورت `Dataset` از نوع XML برمی‌گردد که شامل اطلاعات زیر است:
 
-| نام فیلد         | نوع          | توضیح                 |
-| ---------------- | ------------ | --------------------- |
-| `LVal18AFC`      | string       | نماد                  |
-| `DEven`          | int          | تاریخ                 |
-| `ZTotTran`       | decimal      | تعداد معاملات         |
-| `QTotTran5J`     | decimal      | حجم معاملات           |
-| `QTotCap`        | decimal      | ارزش معاملات          |
-| `InsCode`        | long         | کد نماد               |
-| `LVal30`         | string       | توضیح نماد            |
-| `PClosing`       | decimal      | قیمت پایانی           |
-| `PDrCotVal`      | decimal      | آخرین قیمت معامله شده |
-| `PriceChange`    | decimal      | تغییر قیمت            |
-| `PriceMin`       | decimal      | حداقل قیمت            |
-| `PriceMax`       | decimal      | حداکثر قیمت           |
-| `PriceFirst`     | decimal      | اولین قیمت معامله     |
-| `PriceYesterday` | decimal      | قیمت دیروز            |
-| `Last`           | unsignedByte | وضعیت آخر             |
-| `HEven`          | int          | ساعت                  |
+| نام فیلد     |           توضیح              |
+| ----------------- | ------------------------- |
+| `LVal18AFC`       | نماد                     |
+| `DEven`           | تاریخ                    |
+| `ZTotTran`        | تعداد معاملات            |
+| `QTotTran5J`      | حجم معاملات              |
+| `QTotCap`         | ارزش معاملات             |
+| `InsCode`         |  کد نماد                |
+| `LVal30`          | توضیح نماد              |
+| `PClosing`        | قیمت پایانی             |
+| `PDrCotVal`       | آخرین قیمت معامله شده  |
+| `PriceChange`     | تغییر قیمت              |
+| `PriceMin`        | حداقل قیمت              |
+| `PriceMax`        | حداکثر قیمت             |
+| `PriceFirst`      | اولین قیمت معامله      |
+| `PriceYesterday`  | قیمت دیروز             |
+| `Last`            | وضعیت آخر              |
+| `HEven`           | ساعت                   |
 
 ---
 

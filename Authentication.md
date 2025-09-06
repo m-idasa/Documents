@@ -62,6 +62,6 @@ curl --location 'https://{BaseUrl}/Login' \
 
 پس از دریافت توکن، در تمام درخواست‌های بعدی باید هدر زیر اضافه شود:
 
-``` http
+```
 Authorization: Bearer {token}
 ```
