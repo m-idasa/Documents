@@ -13,6 +13,3 @@ just_the_docs:
     - /assets/css/custom.css
 
 color_scheme: dark
-
-baseurl: ""
-
