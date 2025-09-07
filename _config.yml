@@ -10,7 +10,7 @@ plugins:
 
 just_the_docs:
   css:
-    - assets/css/custom.css
+    - /assets/css/custom.css
 
 color_scheme: dark
 
