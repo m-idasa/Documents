@@ -15,13 +15,13 @@ nav_order: 1
 ## آدرس
 
 ```
-POST https://{BaseUrl}/Login
+POST https://{BaseUrl}/Account/Login
 ```
 
 مثال:
 
 ```bash
-curl --location 'https://{BaseUrl}/login' \
+curl --location 'https://{BaseUrl}/Account/login' \
 --header 'Content-Type: application/json' \
 --data-raw '   {
         "UserName": "testuser",
@@ -50,7 +50,7 @@ curl --location 'https://{BaseUrl}/login' \
 ## نمونه درخواست
 
 ``` bash
-curl --location 'https://{BaseUrl}/Login' \
+curl --location 'https://{BaseUrl}/Account/Login' \
 --header 'Content-Type: application/json' \
 --data '{
     "Username": "testuser",
